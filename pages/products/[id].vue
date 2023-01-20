@@ -17,13 +17,15 @@
 const { id } = useRoute().params
 const uri = 'https://fakestoreapi.com/products/' + id
 
-// fetch the product
+// fetch a specific product by its id
 const { data: product } = await useFetch(uri, { key: id })
 
+// Throw error.vue message for product id that does not exist
 if (!product.value) {
   throw createError({ statusCode: 404, statusMessage: 'Product not found', fatal: true })
 }
 
+// Overides the default layout 
 definePageMeta({
   layout: 'products'
 })

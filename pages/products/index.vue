@@ -11,6 +11,7 @@
 <script setup>
 import ProductCard from "~~/components/ProductCard.vue";
 
+// Overides the defaul layout 
 definePageMeta({
   layout: 'products'
 })
@@ -23,7 +24,7 @@ useHead({
   ]
 })
 
-// fetch the products
+// fetch the products from the api
 const { data: products } = await useFetch('https://fakestoreapi.com/products')
 </script>
 
