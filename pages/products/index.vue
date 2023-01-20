@@ -5,15 +5,13 @@
       omnis, animi cum doloremque. Doloremque expedita molestiae sapiente, debitis facilis sed incidunt quis. Numquam,
       sapiente.
     </p>
-    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus labore temporibus nihil amet veritatis sit
-      omnis, animi cum doloremque. Doloremque expedita molestiae sapiente, debitis facilis sed incidunt quis. Numquam,
-      sapiente.
-    </p>
   </div>
 </template>
 
 <script setup>
-
+definePageMeta({
+  layout: 'products'
+})
 </script>
 
 <style scoped>
