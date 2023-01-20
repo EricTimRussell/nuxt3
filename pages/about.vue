@@ -9,11 +9,12 @@
       omnis, animi cum doloremque. Doloremque expedita molestiae sapiente, debitis facilis sed incidunt quis. Numquam,
       sapiente.
     </p>
+    <div>{{ data }}</div>
   </div>
 </template>
 
 <script setup>
-
+const { data } = await useFetch('/api/ninja?name=mario')
 </script>
 
 <style scoped>
