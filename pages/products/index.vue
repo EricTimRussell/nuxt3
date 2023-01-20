@@ -15,6 +15,14 @@ definePageMeta({
   layout: 'products'
 })
 
+// Overides Nuxt config meta tags 
+useHead({
+  title: 'Nuxt 3 | Merch',
+  meta: [
+    { name: 'description', content: 'Nuxt 3 Merch' }
+  ]
+})
+
 // fetch the products
 const { data: products } = await useFetch('https://fakestoreapi.com/products')
 </script>
